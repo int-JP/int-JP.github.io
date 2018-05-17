@@ -1,0 +1,70 @@
+#myVideo {
+  position: cover;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+h1 {
+  font-family: 'Londrina Shadow', cursive;
+  font-size: 4em;
+  color: white;
+}
+
+h2 {
+  font-family: courier;
+  font-size: 2em;
+}
+
+header {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li, a {
+  display: inline;
+  text-decoration: none;
+}
+
+#main-nav {
+  color: goldenrod;
+}
+
+#keepWorkingButton {
+  background-color: white;
+  opacity: .3;
+  border: white 3px solid;
+  border-radius: 4px;
+  color: black;
+  margin: 0 auto;
+  text-align: center;
+  display: inline;
+  font-size: 1.2em;
+  padding: 25px 60px;
+  margin-top: 12em;
+}
+
+#whoWeAre {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#whoWeAre h3 {
+  font-family: courier;
+  font-size: 3em;
+}
+
+header #headerOverlay {
+  top: 7em;
+  z-index: 2147483647;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: white;
+}
