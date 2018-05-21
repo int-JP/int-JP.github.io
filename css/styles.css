@@ -34,20 +34,27 @@ header {
 }
 
 nav {
-  display: flex;
-  justify-content: space-around;
+
   z-index: 9999999;
   background: background-color: rgba(255,255,255,0.0);
   position: fixed;
 }
 
+#main-nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 #main-nav li, a {
   font-family: 'Muli', sans-serif;
-  display: inline;
+  display: inline-block;
+  padding-left: .3em;
+  padding-right: .3em;
   text-decoration: none;
-  padding: 1.2em 1.8em;
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: bold;
+  color: white;
 }
 
 #main-nav {
@@ -230,6 +237,41 @@ header #headerOverlay {
   height: 100vh;
 }
 
+
+#contact {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 2em;
+}
+
+#contact-me>article {
+  width: 80%;
+  margin: auto;
+}
+
+.flexBoundary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.form-section {
+  width: 49%;
+}
+
+.form-control {
+  border: transparent;
+}
+
+textarea {
+  resize: none;
+}
+
+input[type="submit"]{
+ background-color: #6FAB82;
+ color: white;
+}
+
 /* mediaQueries */
 /* work on these later after the static page is better */
 
@@ -346,6 +388,13 @@ letter-spacing:.02rem;
 margin-bottom:1.3rem;
 }
 
+footer {
+
+}
+
+#contact-me {
+  height: 100vh;
+}
 
 /* Media Queries */
 
