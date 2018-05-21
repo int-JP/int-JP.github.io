@@ -1,9 +1,21 @@
+body {
+  background-color: black;
+  color: white;
+}
+
 #myVideo {
   position: cover;
   right: 0;
   bottom: 0;
   width: 100%;
   min-height: 100%;
+  height: 100vh;
+
+/* Create the parallax scrolling effect */
+  /* background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
 }
 
 h1 {
@@ -24,11 +36,18 @@ header {
 nav {
   display: flex;
   justify-content: space-around;
+  z-index: 9999999;
+  background: background-color: rgba(255,255,255,0.0);
+  position: fixed;
 }
 
-nav ul li, a {
+#main-nav li, a {
+  font-family: 'Muli', sans-serif;
   display: inline;
   text-decoration: none;
+  padding: 1.2em 1.8em;
+  font-size: 1.3em;
+  font-weight: bold;
 }
 
 #main-nav {
@@ -49,22 +68,302 @@ nav ul li, a {
   margin-top: 12em;
 }
 
-#whoWeAre {
-  display: flex;
-  justify-content: flex-start;
+#aboutMe {
+  height: 100vh;
 }
 
-#whoWeAre h3 {
-  font-family: courier;
-  font-size: 3em;
+#aboutMe article{
+  display: flex;
+  flex-direction: row;
+}
+
+#aboutMe h3 {
+  text-align:  center;
+  font-family: 'Muli', sans-serif;
+  font-size: 2.5em;
+}
+
+#aboutMe p {
+  border: 1px red solid;
 }
 
 header #headerOverlay {
-  top: 7em;
+  top: 3em;
   z-index: 2147483647;
   position: absolute;
   left: 0;
   right: 0;
   margin: auto;
   color: white;
+}
+
+/*
+header #headerOverlay {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   color: white;
+   height: 100vh;
+   background: url("../images/tidepools.jpg") no-repeat center top fixed;
+   background-size: 100%;
+} */
+
+#skillContainer{
+  background-position: cover;
+  background-repeat: no-repeat;
+}
+
+#skillsSection {
+  /* background-image: url("../assets/brickBackground2k.jpg"); */
+  background-color: #BADA55;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#skillsHeader {
+  font-family: 'Londrina Shadow', cursive;
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.skillItem {
+  font-family: 'Muli', sans-serif;
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-left: 1em;
+  /* margin-top: -1.3em; */
+}
+
+.skill {
+  background-color: rgba(255,255,255,0.4);
+  border-radius: 15px;
+  width: 80%;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  margin: 0;
+  padding-bottom: .8em;
+  /* margin-left: 1em; */
+
+}
+
+.empty-bar {
+  background-color: rgba(255,255,255,0.4);
+  border: black 2px solid;
+  border-radius: 15px;
+  width: 80%;
+  margin: .5em 10%;
+  /* padding: -1em; */
+  margin: -1 auto;
+
+
+}
+
+#skillsection p {
+  margin-left: 1em;
+}
+
+#html {
+  background: linear-gradient(to right, red, red 3%, yellow 44%, green 75%);
+  width: 83%;
+}
+
+#css {
+  background: linear-gradient(to right, red, red 3%, yellow 44%, green 75%);
+  width: 72%;
+}
+
+#javascript {
+  background: linear-gradient(to right, red, red 3%, yellow 44%, green 75%);
+  width: 97%;
+}
+
+#jquery {
+  background: linear-gradient(to right, red, red 2%, yellow 32%, green 66%);
+  width: 92%;
+}
+
+#python {
+  background: linear-gradient(to right, red, red 2%, yellow 32%, green 66%);
+  width: 93%;
+}
+
+#mongoose {
+  background: linear-gradient(to right, red, red 2%, yellow 32%, green 66%);
+  width: 87%;
+}
+
+#django {
+  background: linear-gradient(to right, red, red 2%, yellow 32%, green 66%);
+  width: 83%;
+}
+
+#solidity {
+  background: linear-gradient(to right, red, red 2%, yellow 32%, green 66%);
+  width: 94%;
+}
+
+#unity {
+  background: linear-gradient(to right, red, red 2%, yellow 32%, green 66%);
+  width: 94%;
+}
+
+#projects {
+  height: 100vh;
+  text-align: center;
+}
+
+.autoplay img {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.one-time img {
+  margin: 0 auto;
+  width: 100%;
+}
+
+#testimonials {
+  height: 100vh;
+}
+
+/* mediaQueries */
+/* work on these later after the static page is better */
+
+/* if device width is less than or equalto 1600px, do this... */
+@media (max-width: 1600px) {
+
+}
+
+@media (max-width: 1250px) {
+
+}
+
+@media (max-width: 950px) {
+
+}
+
+@media (max-width: 750px) {
+
+}
+
+@media (max-width: 600px) {
+
+}
+
+@media (max-width: 450px) {
+
+}
+
+/* Video Overlay */
+
+#overlay {
+background-color:rgba(0,0,0,0.0);
+height:100vh;
+left:0;
+position:relative;
+top:0;
+transition:background-color 300ms ease;
+width:100%;
+}
+
+.fading { background-color:rgba(0,0,0,.85) !important; }
+
+
+/* Hero Video + Fallback */
+
+#hero-vid {
+backface-visibility:hidden;
+background:url("http://www.markhillard.com/sandbox/media/polina.jpg") no-repeat scroll 0 0 #000;
+background-size:cover;
+bottom:0;
+height:auto;
+min-height:100%;
+min-width:100%;
+perspective:1000;
+position:fixed;
+right:0;
+width:auto;
+z-index:-1;
+}
+
+#hero-pic {
+display:block;
+height:auto;
+width:100%;
+}
+
+#state {
+bottom:0;
+cursor:pointer;
+font-size:2.25rem;
+left:0;
+line-height:1;
+padding:2rem 2.5rem 1.65rem;
+position:absolute;
+}
+
+
+/* Content Styles */
+
+#title {
+backface-visibility:hidden;
+left:0;
+perspective:1000;
+position:fixed;
+width:100%;
+}
+
+#title h1 {
+background-color:rgba(0,0,0,0);
+font-family:"Poiret One", sans-serif;
+font-size:2.5rem;
+padding:1rem 1.75rem;
+margin-top: 15%;
+}
+
+#title h2 {
+background-color:rgba(0,0,0,0);
+font-family:"Poiret One", sans-serif;
+font-size:1.6rem;
+padding:1rem 1.75rem;
+margin-top: 16%;
+}
+
+#content {
+background-color:#151515;
+padding:2.5rem;
+position:relative;
+z-index:1;
+}
+
+#content p {
+font-size:1.25rem;
+letter-spacing:.02rem;
+margin-bottom:1.3rem;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width:768px) {
+    #overlay { height:auto; }
+}
+
+
+/* Visibility Helpers */
+
+@media only screen and (min-width:769px) {
+    .visible-mobile,.visible-tablet,.hidden-desktop { display:none !important; }
+}
+
+@media only screen and (min-width:480px) and (max-width:768px) {
+    .visible-mobile,.hidden-tablet,.visible-desktop { display:none !important; }
+}
+
+@media only screen and (max-width:479px) {
+    .hidden-mobile,.visible-tablet,.visible-desktop { display:none !important; }
 }

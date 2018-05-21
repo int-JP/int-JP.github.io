@@ -2,81 +2,136 @@
 <html>
   <head>
     <link href="https://fonts.googleapis.com/css?family=Londrina+Shadow" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/latest/slick.css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <meta charset="utf-8">
-    <title> Project0 template </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="javascript" href="js/main.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" charset="utf-8"defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
+    <script src="js/main.js" charset="utf-8" defer></script>
+    <title> Project0 template </title>
 
   </head>
   <body>
 
   <nav id="main-nav">
     <ul>
-      <li><a href="#">______ About Me </a></li>
-      <li><a href="#">______ Skills </a></li>
-      <li><a href="#">______ Projects </a></li>
-      <li><a href="#">______ Testimonials ______</a></li>
+      <li><a href="#aboutMe"> About Me</a></li>
+      <li><a href="#skillsSection"> Skills </a></li>
+      <li><a href="#projects"> Projects </a></li>
+      <li><a href="#testimonials"> Testimonials </a></li>
     </ul>
   </nav>
 
-  <header>
+  <!-- <header class="fader">
     <section id="headerOverlay">
-      <h1> Jean Paul Dualan : Web Developer </h1>
+      <h1 id ="title"> Jean Paul Dualan : Web Developer </h1>
       <h2> Just Do It. Do more. Do better. </h2>
       <button id="keepWorkingButton"> Keep Working ... </button>
+    </section> -->
+    <header class="fader">
+    <section id="overlay">
+      <div id="title"><h1>Jean Paul Dualan</h1>
+      <h2>Full Stack Web Developer</h2></div>
+      <video class="visible-desktop" id="hero-vid" poster="http://www.markhillard.com/sandbox/media/polina.jpg" autoplay loop muted>
+        <!-- <source type="video/webm" src="/assets/newVideo.mp4"></source> -->
+        <source type="video/mp4" src="assets/newVideo.mp4"></source>
+      </video>
+      <div id="state" class="visible-desktop"><span class="fa fa-pause"></span></div>
+      <img id="hero-pic" class="hidden-desktop" src="http://www.markhillard.com/sandbox/media/polina.jpg" alt="">
     </section>
 
-  <video autoplay muted loop id="myVideo">
+  <!-- <video autoplay muted loop id="myVideo">
     <source src="video.mp4" type="video/mp4">
-  </video>
+  </video> -->
 
   </header>
 
-  <section id="whoWeAre">
+  <section id="aboutMe" class="fader">
+    <h3> Full Stack Web Developer <h3>
+    <h3> Aspiring Web Developer specializing in blockchain development</h3>
     <article>
-      <h3> Who Is Jean Paul? <h3>
-      <h4> Aspiring Web Developer specializing in blockchain development<h4>
+      <section>
+        <img src="#" alt="Jean Paul Dualan"/>
+        <p> Lorem ipsum dolor sit amet, cu duo veniam elaboraret. Ipsum saepe habemus an his, no pro deseruisse comprehensam. Te civibus eleifend sea. Ex duo laudem efficiantur, decore eruditi usu in. In nibh legendos mea. Eu vis sonet denique conceptam. </p>
+      </section>
+      <section>
+        <img src="#" alt="Jean Paul Dualan"/>
+        <p> Lorem ipsum dolor sit amet, cu duo veniam elaboraret. Ipsum saepe habemus an his, no pro deseruisse comprehensam. Te civibus eleifend sea. Ex duo laudem efficiantur, decore eruditi usu in. In nibh legendos mea. Eu vis sonet denique conceptam. </p>
+      </section>
+      <section>
+        <img src="#" alt="Jean Paul Dualan"/>
+        <p> Lorem ipsum dolor sit amet, cu duo veniam elaboraret. Ipsum saepe habemus an his, no pro deseruisse comprehensam. Te civibus eleifend sea. Ex duo laudem efficiantur, decore eruditi usu in. In nibh legendos mea. Eu vis sonet denique conceptam. </p>
+      </section>
+      <section>
+        <img src="#" alt="Jean Paul Dualan"/>
+        <p> Lorem ipsum dolor sit amet, cu duo veniam elaboraret. Ipsum saepe habemus an his, no pro deseruisse comprehensam. Te civibus eleifend sea. Ex duo laudem efficiantur, decore eruditi usu in. In nibh legendos mea. Eu vis sonet denique conceptam. </p>
+      </section>
       <button id="services"> Services </button>
-      <img src="#" alt="Jean Paul Dualan"/>
     </article>
   </section>
 
-  <section id="testimonials">
-    <article>
-      <quote>"Jean Paul is the mansauce"</quote>
-      <quote>"Jean Paul is the mansauce"</quote>
-      <quote>"Jean Paul is the mansauce"</quote>
+  <container id="skillContainer">
+    <section id="skillsSection" class="fader">
+      <h3 id="skillsHeader"> $.Kill$</h3>
+      <div class="empty-bar"><p class="skill" id="html"><span class="skillItem"> HTML </span></p></div>
+      <div class="empty-bar"><p class="skill" id="css"><span class="skillItem"> CSS <span></p></div>
+      <div class="empty-bar"><p class="skill" id="javascript"><span class="skillItem"> JavaScript </span></p></div>
+      <div class="empty-bar"><p class="skill" id="jquery"><span class="skillItem"> jQuery </span></p></div>
+      <div class="empty-bar"><p class="skill" id="python"><span class="skillItem"> Python </span></p></div>
+      <div class="empty-bar"><p class="skill" id="mongoose"><span class="skillItem"> Mongoose </span></p></div>
+      <div class="empty-bar"><p class="skill" id="django"><span class="skillItem"> Django </span></p></div>
+      <div class="empty-bar"><p class="skill" id="solidity"><span class="skillItem"> Solidity </span></p></div>
+      <div class="empty-bar"><p class="skill" id="unity"><span class="skillItem"> Unity </span></p></div>
 
-      <button id="viewMoreButton"> View More </button>
-    </article>
-  </section>
+    </section>
+  </container>
 
-  <section id="latestWork">
+  <section id="projects" class="fader">
     <h5> Our Latest Work</h5>
     <p> ________ </p>
-    <h3> Project0 </h3>
+    <h3> Current Projects </h3>
 
-    <article id="project0">
-      <img src="#"/>
-      <h3> Name Here </h3>
-      <h5> tagline </h5>
-    </article>
+    <section class="one-time">
+      <article id="project0">
+        <h3> project0 </h3>
+        <h5> tagline </h5>
+        <img src="http://s3.envato.com/files/204254529/Theme_Pre/01_Homepage.__large_preview.jpg"/>
+      </article>
 
-    <article id="project1">
-      <img src="#"/>
-      <h3> Name Here </h3>
-      <h5> tagline </h5>
-    </article>
+      <article id="project1">
+        <h3> project1 </h3>
+        <h5> tagline </h5>
+        <img src="http://s3.envato.com/files/101506171/Preview/01_Cover.__large_preview.png"/>
+      </article>
 
-    <article id="project2">
-      <img src="#"/>
-      <h3> Name Here </h3>
-      <h5> tagline </h5>
-    </article>
+      <article id="project2">
+        <h3> project2 </h3>
+        <h5> tagline </h5>
+        <img src="https://s-media-cache-ak0.pinimg.com/originals/18/98/2e/18982e3dbafc10435fa57b085f611ae8.jpg"/>
+      </article>
+    </section>
 
   <button> View All Projects </button>
-
   </section>
+
+  <section id="testimonials" class="fader">
+    <article class="autoplay">
+      <img src="http://media.quoteprism.net/img/715/3/608744-programming-quotes.jpg"/>
+      <img src="https://www.thenewsgeeks.com/wp-content/uploads/2017/08/quote-computers-themselves-and-software-yet-to-be-developed-will-revolutionize-the-way-we-steve-jobs-14-71-77-e1502193825192.jpg"/>
+      <img src="http://www.techigniter.in/blogs/wp-content/uploads/2015/01/wall.png"/>
+    </article>
+  </section>
+
+
+  <div id="content">
+      <p>Cookie cotton candy powder. Unerdwear.com sweet cake. Powder jujubes marshmallow marzipan. Jelly jelly-o sweet apple pie brownie apple pie. Bonbon sweet roll carrot cake tart gummi bears drag&eacute;e sweet. Marshmallow candy powder. Applicake danish apple pie marzipan cheesecake icing macaroon sweet biscuit. Sesame snaps jelly-o pie cheesecake tootsie roll chocolate cake souffl&eacute; cotton candy. Sweet roll brownie applicake. Sweet roll apple pie sesame snaps biscuit bear claw sweet roll chocolate bar. Tart sweet roll unerdwear.com pie cake brownie carrot cake. Tootsie roll lollipop marshmallow.</p>
+  </div>
+
 
 
 
