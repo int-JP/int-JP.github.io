@@ -77,11 +77,16 @@ nav {
 
 #aboutMe {
   height: 100vh;
+  margin-top: 5em;
+  width: 80%
 }
 
 #aboutMe article{
+
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  margin-left: 2.5em;
 }
 
 #aboutMe h3 {
@@ -91,7 +96,15 @@ nav {
 }
 
 #aboutMe p {
-  border: 1px red solid;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#aboutMe img {
+  height: 12em;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 header #headerOverlay {
@@ -175,47 +188,47 @@ header #headerOverlay {
 
 #html {
   background: linear-gradient(to right, red, red 3%, yellow 44%, green 75%);
-  width: 83%;
+  width: 74%;
 }
 
 #css {
   background: linear-gradient(to right, red, red 3%, yellow 44%, green 75%);
-  width: 72%;
+  width: 63%;
 }
 
 #javascript {
   background: linear-gradient(to right, red, red 3%, yellow 44%, green 75%);
-  width: 97%;
+  width: 76%;
 }
 
 #jquery {
-  background: linear-gradient(to right, red, red 2%, yellow 32%, green 66%);
-  width: 92%;
+  background: linear-gradient(to right, red, red 3%, yellow 44%, green 75%);
+  width: 70%;
 }
 
 #python {
-  background: linear-gradient(to right, red, red 2%, yellow 32%, green 66%);
-  width: 93%;
+  background: linear-gradient(to right, red, red 3%, yellow 44%, green 75%);
+  width: 13%;
 }
 
 #mongoose {
-  background: linear-gradient(to right, red, red 2%, yellow 32%, green 66%);
-  width: 87%;
+  background: linear-gradient(to right, red, red 3%, yellow 44%, green 75%);
+  width: 7%;
 }
 
 #django {
-  background: linear-gradient(to right, red, red 2%, yellow 32%, green 66%);
-  width: 83%;
+  background: linear-gradient(to right, red, red 3%, yellow 44%, green 75%);
+  width: 13%;
 }
 
 #solidity {
-  background: linear-gradient(to right, red, red 2%, yellow 32%, green 66%);
-  width: 94%;
+  background: linear-gradient(to right, red, red 3%, yellow 44%, green 75%);
+  width: 64%;
 }
 
 #unity {
-  background: linear-gradient(to right, red, red 2%, yellow 32%, green 66%);
-  width: 94%;
+  background: linear-gradient(to right, red, red 3%, yellow 44%, green 75%);
+  width: 64%;
 }
 
 #projects {
